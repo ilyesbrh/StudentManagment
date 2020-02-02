@@ -1,0 +1,75 @@
+.hover:hover {
+  color: white !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  background: #8e9eab;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fdfbfb), to(#ebedee));
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body .card {
+  --background: #FFFFFF;
+  --text: black;
+  position: relative;
+  width: 260px;
+  height: 135px;
+  border-radius: 21px;
+  border-width: 0px;
+  -webkit-box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
+}
+
+body .card:hover {
+  cursor: pointer;
+}
+
+body .card.card1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff006d), to(#f76100));
+  background-image: linear-gradient(to right bottom, #ff006d, #f76100);
+}
+
+body .card.card2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1d00ff), to(#a500f7));
+  background-image: linear-gradient(to right bottom, #1d00ff, #a500f7);
+}
+
+body .card.card3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#039f1d), to(#c0d205));
+  background-image: linear-gradient(to right bottom, #039f1d, #c0d205);
+}
+
+body .card.card4 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#460368), to(#f906eb));
+  background-image: linear-gradient(to right bottom, #460368, #f906eb);
+}
+
+body .card.card5 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#de6700), to(#f906f5));
+  background-image: linear-gradient(to right bottom, #de6700, #f906f5);
+}
+
+body .card.card6 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#287af1), color-stop(#9768e1), color-stop(#cf51c2), color-stop(#f13f98), to(#fd416a));
+  background-image: linear-gradient(to right bottom, #287af1, #9768e1, #cf51c2, #f13f98, #fd416a);
+}
+
+body .card .icons {
+  height: 50px;
+}
+
+body .card .icons .material-icons {
+  cursor: pointer;
+}
+
+body .card .icons .material-icons.delete:hover {
+  color: red !important;
+  background-color: white;
+  border-radius: 25px;
+  padding: 2px;
+}
+/*# sourceMappingURL=main.css.map */

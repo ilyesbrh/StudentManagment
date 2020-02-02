@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Students management</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- google font ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Date Picker -->
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- My css -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+
+    <nav class="navbar shadow navbar-expand-lg navbar-light " style="background-color: #F5F7F6;">
+        <a class="navbar-brand" href="javascript:void(0)">Student manager</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target="#addStudent">Add Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target="#searchModel">Search</a>
+                </li>
+            </ul>
+            <a type="button" class="btn btn-outline-primary hover">Resume</a>
+
+            <a type="button" class="btn btn-outline-info ml-2 hover"><i class='fab fa-github'></i></a>
+            <!-- search model -->
+            <div class="modal" id="searchModel">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Search</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form class="form-inline my-2 d-flex flex-column" id="search">
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">first & last name</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="First" name="first_name">
+                                    <input type="text" class="form-control" placeholder="Last" name="last_name">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Date</span>
+                                    </div>
+                                    <input type="date" class="form-control" placeholder="birthday" name="date">
+                                </div>
+                                <input class="btn btn-success my-2 my-sm-0" data-dismiss="modal" type="submit" value="Search" onclick="search()">
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- addStudent model -->
+            <div class="modal" id="addStudent">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Add student</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form class="form-inline my-2 my-lg-0 d-flex flex-column" id="add">
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Inscription number</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="D03/123/141..." name="number">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">First & Last name </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="name" name="first_name">
+                                    <input type="text" class="form-control" placeholder="surname" name="last_name">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">address</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="your address" name="address">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Birthday</span>
+                                    </div>
+                                    <input class="form-control w-100 mr-0" type="date" placeholder="22/01/1995" name="date">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Gender</span>
+                                    </div>
+                                    <select name="gender" class="form-control w-100 mr-0">
+                                        <option value="m">male</option>
+                                        <option value="f">female</option>
+                                    </select>
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Study level</span>
+                                    </div>
+                                    <select name="level" class="form-control w-100 mr-0">
+                                        <option value="L1">L1</option>
+                                        <option value="L2">L2</option>
+                                        <option value="L3">L3</option>
+                                        <option value="M1">M1</option>
+                                        <option value="M2">M2</option>
+                                    </select>
+                                </div>
+                                <input class="btn btn-success my-2 " data-dismiss="modal" type="submit" value="add student" onclick="AddStudent();">
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- update model -->
+            <div class="modal" id="updateStudent">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Student</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form class="form-inline my-2 my-lg-0 d-flex flex-column" id="update">
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Inscription number</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="D03/123/141..." name="number" id="number">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">First & Last name </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="name" name="first_name" id="first_name">
+                                    <input type="text" class="form-control" placeholder="surname" name="last_name" id="last_name">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">address</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="your address" name="address" id="address">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Birthday</span>
+                                    </div>
+                                    <input class="form-control w-100 mr-0" type="datetime" placeholder="22/01/1995" name="date" id="date">
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Gender</span>
+                                    </div>
+                                    <select name="gender" class="form-control w-100 mr-0" id="gender">
+                                        <option value="m">male</option>
+                                        <option value="f">female</option>
+                                    </select>
+                                </div>
+                                <div class="input-group my-2 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Study level</span>
+                                    </div>
+                                    <select name="level" class="form-control w-100 mr-0" id="level">
+                                        <option value="L1">L1</option>
+                                        <option value="L2">L2</option>
+                                        <option value="L3">L3</option>
+                                        <option value="M1">M1</option>
+                                        <option value="M2">M2</option>
+                                    </select>
+                                </div>
+                                <input type="text" style="display: none;" name="id" id="id">
+                                <input class="btn btn-success my-2 " data-dismiss="modal" type="submit" value="Edit student" onclick="UpdateStudent();">
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="card-container" class="row align-items-center justify-content-around pt-3">
+
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Date Picker -->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <!-- fa icons -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- axios for ajax -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- my Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

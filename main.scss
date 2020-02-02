@@ -1,0 +1,60 @@
+.hover {
+    &:hover {
+        color: white!important;
+    }
+}
+
+body {
+    font-family: "Roboto", sans-serif !important;
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdfbfb, #ebedee);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .card {
+        --background: #FFFFFF;
+        --text: black;
+        position: relative;
+        width: 260px;
+        height: 135px;
+        border-radius: 21px;
+        border-width: 0px;
+        box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .05);
+        &:hover {
+            cursor: pointer;
+        }
+        &.card1 {
+            background-image: linear-gradient(to right bottom, #ff006d, #f76100);
+        }
+        &.card2 {
+            background-image: linear-gradient(to right bottom, #1d00ff, #a500f7);
+        }
+        &.card3 {
+            background-image: linear-gradient(to right bottom, #039f1d, #c0d205);
+        }
+        &.card4 {
+            background-image: linear-gradient(to right bottom, #460368, #f906eb);
+        }
+        &.card5 {
+            background-image: linear-gradient(to right bottom, #de6700, #f906f5);
+        }
+        &.card6 {
+            background-image: linear-gradient( to right bottom, #287af1, #9768e1, #cf51c2, #f13f98, #fd416a);
+        }
+        .icons {
+            height: 50px;
+            .material-icons {
+                cursor: pointer;
+                &.delete {
+                    &:hover {
+                        color: red!important;
+                        background-color: white;
+                        border-radius: 25px;
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
