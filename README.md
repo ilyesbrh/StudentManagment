@@ -88,13 +88,13 @@ You have 2 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 
 
 
-1. Database
+## Database
 
 As it is specified in requirements we created a database named student with 7 column then we added id and createdAt for development purposes.
 
 
 
-2. html/css
+## html/css
 
 HTML and CSS are the very first thing to do in any web application so we started creating our static template using bootstrap to make it responsive , we divided our page into two main parts :
 
@@ -109,7 +109,7 @@ HTML and CSS are the very first thing to do in any web application so we started
 
 *   **Create Student** we used this function to create cards dynamically 
 
-4. php
+## php
 *   PHP code is the server side code that contain connection to database . In all PHP script we did key things :
     *   Connect to Database.
     *   Retrieve Parameters from request.
