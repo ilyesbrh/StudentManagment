@@ -122,15 +122,16 @@ HTML and CSS are the very first thing to do in any web application so we started
     *   **getData.php **this script has two functionalities:
         *   Get all data from Database without any filtering.
         *   Get data based on parameters provided in request.
-5. production
+
+# 2 **production**
 
 
-### hosting database
+## hosting database
 
 		We hosted our Database inside 00webhost.com so it can be accessible from  
 
 
-### hosting website
+## hosting website
 
 		We hosted our website in 00webhost.com and we uploaded app files using ftp account and Filezilla 
 
