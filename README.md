@@ -122,33 +122,7 @@ HTML and CSS are the very first thing to do in any web application so we started
 3. javascript
 *    **Data getter/sender functions **is a set of functions we created to communicate with server api using axios library for example **update student** function
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/student-managment0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/student-managment0.png "image_tooltip")
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/student-managment1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/student-managment1.png "image_tooltip")
-
-
-
-
 *   **Create Student** we used this function to create cards dynamically 
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/student-managment2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/student-managment2.png "image_tooltip")
- 
-
-
 
 4. php
 *   PHP code is the server side code that contain connection to database . In all PHP script we did key things :
@@ -181,39 +155,7 @@ HTML and CSS are the very first thing to do in any web application so we started
 **It was an exciting project to work on and there is a lot I learnt from it, above and beyond its original scope. we were able to study and train on development in an environment that was almost completely foreign to us, which we believe we have been reasonably successful with. Although we were not able to complete some of the proposed functionality like authentification, the functionality related to the core purpose of the application is working as desired. we believe there is still a lot of potential for this application, and we will continue development in the future.**
 
 
-## [https://studentmanagmentbba.000webhostapp.com/](https://studentmanagmentbba.000webhostapp.com/)
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/student-managment3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/student-managment3.png "image_tooltip")
-
-
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/student-managment4.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/student-managment4.png "image_tooltip")
-
-
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/student-managment5.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/student-managment5.png "image_tooltip")
-
-
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/student-managment6.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/student-managment6.png "image_tooltip")
-
+## [https://studentmanagmentbba.000webhostapp.com/](studentmanagmentbba)
 
 
 <!-- Docs to Markdown version 1.0β17 -->
