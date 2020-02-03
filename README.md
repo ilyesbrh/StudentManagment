@@ -21,21 +21,6 @@ You have 2 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 ----->
 
 
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 7.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 # Introduction:
 
 	In this application me and my colleges we developed a small web application to carry out the Objective of this mini-project then we created this brief report to explain our work.
@@ -155,7 +140,7 @@ HTML and CSS are the very first thing to do in any web application so we started
 **It was an exciting project to work on and there is a lot I learnt from it, above and beyond its original scope. we were able to study and train on development in an environment that was almost completely foreign to us, which we believe we have been reasonably successful with. Although we were not able to complete some of the proposed functionality like authentification, the functionality related to the core purpose of the application is working as desired. we believe there is still a lot of potential for this application, and we will continue development in the future.**
 
 
-## [https://studentmanagmentbba.000webhostapp.com/](studentmanagmentbba)
+## [studentmanagmentbba](https://studentmanagmentbba.000webhostapp.com/)
 
 
 <!-- Docs to Markdown version 1.0β17 -->
